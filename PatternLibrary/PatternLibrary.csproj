@@ -40,7 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\Strategy\Abstract\Duck.cs" />
+    <Compile Include="Patterns\Strategy\Code\DuckImpl\ModelDuck.cs" />
+    <Compile Include="Patterns\Strategy\Code\IFlyBehaviorImpl\FlyNoWay.cs" />
+    <Compile Include="Patterns\Strategy\Code\IFlyBehaviorImpl\FlyRockePowered.cs" />
+    <Compile Include="Patterns\Strategy\Code\IFlyBehaviorImpl\FlyWithWIngs.cs" />
+    <Compile Include="Patterns\Strategy\Code\IQuackBehaviorImpl\DefaultQuack.cs" />
+    <Compile Include="Patterns\Strategy\Code\IQuackBehaviorImpl\MuteQuack.cs" />
+    <Compile Include="Patterns\Strategy\Code\IQuackBehaviorImpl\Squeak.cs" />
+    <Compile Include="Patterns\Strategy\Interaface\IFlyBehavior.cs" />
+    <Compile Include="Patterns\Strategy\Interaface\IQuackBehavior.cs" />
+    <Compile Include="Patterns\Strategy\Code\DuckImpl\MallardDuck.cs" />
+    <Compile Include="Patterns\Strategy\StrategyStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CFD96429-4941-4EAD-B0BB-24508BC57F7A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

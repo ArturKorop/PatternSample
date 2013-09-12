@@ -11,7 +11,7 @@ namespace Common.Code
     /// Support class for work with text and xml
     /// Default using <see cref="ConsoleTextProvider"/>
     /// 
-    /// Have to configurate before or during using. 
+    /// Must to be configurate before or during using. 
     /// By setting <see cref="ITextProvider"/>
     /// </summary>
     public static class Support

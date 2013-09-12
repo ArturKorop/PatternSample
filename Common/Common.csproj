@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Code\Configuration\ConsoleTextProvider.cs" />
     <Compile Include="Code\Configuration\DIServiceLocator.cs" />
+    <Compile Include="Code\RunnableAttribute.cs" />
     <Compile Include="Code\Support.cs" />
     <Compile Include="Interfaces\ITextProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
