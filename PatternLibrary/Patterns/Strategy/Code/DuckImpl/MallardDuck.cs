@@ -9,7 +9,7 @@ namespace PatternLibrary.Patterns.Strategy.Code.DuckImpl
     {
         public MallardDuck()
         {
-            FlyBehavior = new FlyWithWIngs();
+            FlyBehavior = new FlyWithWings();
             QuackBehavior = new DefaultQuack();
         }
 

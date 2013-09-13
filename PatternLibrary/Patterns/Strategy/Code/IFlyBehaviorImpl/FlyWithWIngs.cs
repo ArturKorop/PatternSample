@@ -3,7 +3,7 @@ using PatternLibrary.Patterns.Strategy.Interaface;
 
 namespace PatternLibrary.Patterns.Strategy.Code.IFlyBehaviorImpl
 {
-    public class FlyWithWIngs : IFlyBehavior
+    public class FlyWithWings : IFlyBehavior
     {
         public void Fly()
         {

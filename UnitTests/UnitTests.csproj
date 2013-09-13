@@ -52,12 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonTests\SupportTests.cs" />
+    <Compile Include="PatternLibraryTests\StartegyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{CFD96429-4941-4EAD-B0BB-24508BC57F7A}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PatternLibrary\PatternLibrary.csproj">
+      <Project>{6CA2439C-241A-4C74-BB07-EE37F731B499}</Project>
+      <Name>PatternLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
