@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\Decorator\Abstract\Beverage.cs" />
+    <Compile Include="Patterns\Decorator\Abstract\CondimentDecorator.cs" />
+    <Compile Include="Patterns\Decorator\Code\Beverages\DarkRoast.cs" />
+    <Compile Include="Patterns\Decorator\Code\Beverages\Espresso.cs" />
+    <Compile Include="Patterns\Decorator\Code\Beverages\HouseBlend.cs" />
+    <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Mocha.cs" />
+    <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Soy.cs" />
+    <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Whip.cs" />
+    <Compile Include="Patterns\Decorator\Code\Support\SupportExtensions.cs" />
+    <Compile Include="Patterns\Decorator\DecoratorStarter.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
+    <Compile Include="Patterns\Observer\Code\StatisticDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\WeatherData.cs" />
     <Compile Include="Patterns\Observer\Interface\IDisplayElement.cs" />
     <Compile Include="Patterns\Observer\Interface\IObserver.cs" />

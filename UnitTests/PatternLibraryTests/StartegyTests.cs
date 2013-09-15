@@ -3,8 +3,6 @@ using Common.Code;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using PatternLibrary.Patterns.Strategy.Abstract;
-using PatternLibrary.Patterns.Strategy.Code.IFlyBehaviorImpl;
-using PatternLibrary.Patterns.Strategy.Code.IQuackBehaviorImpl;
 using PatternLibrary.Patterns.Strategy.Interaface;
 
 namespace UnitTests.PatternLibraryTests

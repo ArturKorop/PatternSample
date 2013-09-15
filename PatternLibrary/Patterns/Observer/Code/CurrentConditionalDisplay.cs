@@ -19,6 +19,7 @@ namespace PatternLibrary.Patterns.Observer.Code
         {
             _temperature = temp;
             _humidity = humidity;
+
             Display();
         }
 
