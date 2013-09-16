@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6c20cfdb-ba6b-48b7-8dea-6cd60f596e47" name="Артур@HOME 2013-09-16 21:33:53" runUser="Home\Артур" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="30f07f21-17b7-4440-9716-9dc25a11dac3">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Артур_HOME 2013-09-16 21_33_53">
+      <DeploymentItem filename="E:\git\PatternSample\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\git\PatternSample\ExternalLibrary\Moq\Moq.dll" />
+      <DeploymentItem filename="E:\git\PatternSample\UnitTests\bin\Debug\Microsoft.Practices.Unity.dll" />
+      <DeploymentItem filename="E:\git\PatternSample\PatternLibrary\bin\Debug\PatternLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-09-16T21:33:53.5094700+03:00" queuing="2013-09-16T21:33:56.9436664+03:00" start="2013-09-16T21:33:57.3476896+03:00" finish="2013-09-16T21:33:59.8428323+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="5" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="WeatherDataAndCurrentConditionalDisplayTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="bae2d006-ea72-6eff-aad2-101152a2b05b">
+      <Execution id="23722ac8-10a6-4ebb-bcb1-4f60aaadd2a6" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PatternLibraryTests.ObserverTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WeatherDataAndCurrentConditionalDisplayTest" />
+    </UnitTest>
+    <UnitTest name="AbstarctDuckTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="8670e0a6-efab-0ff3-f84f-9885790b153f">
+      <Execution id="6a46a7f5-5734-40c2-9dbe-c81e50f55974" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PatternLibraryTests.StartegyTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AbstarctDuckTest" />
+    </UnitTest>
+    <UnitTest name="WeatherDataAndStatisticDisplayTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="d444ed68-680a-c45c-aa67-fa213df3647b">
+      <Execution id="ae6c6106-56ab-40d6-9837-8b89d04f7e43" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PatternLibraryTests.ObserverTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WeatherDataAndStatisticDisplayTest" />
+    </UnitTest>
+    <UnitTest name="DecoratorTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="f4461bdc-56b9-6a1b-b93a-ad018fd9885b">
+      <Execution id="58869dcf-f497-4bdc-ab4a-96c86c1b5003" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PatternLibraryTests.DecoratorTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DecoratorTest" />
+    </UnitTest>
+    <UnitTest name="SupportInitializeTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="eeca522d-5fca-1ca9-ce65-b62b0af46fb9">
+      <Execution id="ff010886-cc21-4c8b-9869-21a8b063e4e3" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CommonTests.SupportTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SupportInitializeTest" />
+    </UnitTest>
+    <UnitTest name="ToXmlTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="7752430e-1689-aaf2-0262-a7b74832a48d">
+      <Execution id="fce776f7-93a0-4c81-bc31-b6f5b1b0c458" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CommonTests.SupportTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToXmlTest" />
+    </UnitTest>
+    <UnitTest name="FromXmlTest" storage="e:\git\patternsample\unittests\bin\debug\unittests.dll" id="22125279-2c30-28bd-ae18-4bc4a4c1472e">
+      <Execution id="a9f8d7ce-83c8-49e7-bc0e-7a57a9100780" />
+      <TestMethod codeBase="E:/git/PatternSample/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CommonTests.SupportTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FromXmlTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7752430e-1689-aaf2-0262-a7b74832a48d" executionId="fce776f7-93a0-4c81-bc31-b6f5b1b0c458" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d444ed68-680a-c45c-aa67-fa213df3647b" executionId="ae6c6106-56ab-40d6-9837-8b89d04f7e43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4461bdc-56b9-6a1b-b93a-ad018fd9885b" executionId="58869dcf-f497-4bdc-ab4a-96c86c1b5003" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8670e0a6-efab-0ff3-f84f-9885790b153f" executionId="6a46a7f5-5734-40c2-9dbe-c81e50f55974" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bae2d006-ea72-6eff-aad2-101152a2b05b" executionId="23722ac8-10a6-4ebb-bcb1-4f60aaadd2a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eeca522d-5fca-1ca9-ce65-b62b0af46fb9" executionId="ff010886-cc21-4c8b-9869-21a8b063e4e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22125279-2c30-28bd-ae18-4bc4a4c1472e" executionId="a9f8d7ce-83c8-49e7-bc0e-7a57a9100780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fce776f7-93a0-4c81-bc31-b6f5b1b0c458" testId="7752430e-1689-aaf2-0262-a7b74832a48d" testName="ToXmlTest" computerName="HOME" duration="00:00:00.5527793" startTime="2013-09-16T21:33:57.5387005+03:00" endTime="2013-09-16T21:33:59.1257913+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fce776f7-93a0-4c81-bc31-b6f5b1b0c458">
+    </UnitTestResult>
+    <UnitTestResult executionId="ae6c6106-56ab-40d6-9837-8b89d04f7e43" testId="d444ed68-680a-c45c-aa67-fa213df3647b" testName="WeatherDataAndStatisticDisplayTest" computerName="HOME" duration="00:00:00.2533897" startTime="2013-09-16T21:33:59.1287914+03:00" endTime="2013-09-16T21:33:59.3848061+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae6c6106-56ab-40d6-9837-8b89d04f7e43">
+    </UnitTestResult>
+    <UnitTestResult executionId="58869dcf-f497-4bdc-ab4a-96c86c1b5003" testId="f4461bdc-56b9-6a1b-b93a-ad018fd9885b" testName="DecoratorTest" computerName="HOME" duration="00:00:00.0081371" startTime="2013-09-16T21:33:59.3868062+03:00" endTime="2013-09-16T21:33:59.3978068+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58869dcf-f497-4bdc-ab4a-96c86c1b5003">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a46a7f5-5734-40c2-9dbe-c81e50f55974" testId="8670e0a6-efab-0ff3-f84f-9885790b153f" testName="AbstarctDuckTest" computerName="HOME" duration="00:00:00.0145072" startTime="2013-09-16T21:33:59.3998069+03:00" endTime="2013-09-16T21:33:59.4158078+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a46a7f5-5734-40c2-9dbe-c81e50f55974">
+    </UnitTestResult>
+    <UnitTestResult executionId="23722ac8-10a6-4ebb-bcb1-4f60aaadd2a6" testId="bae2d006-ea72-6eff-aad2-101152a2b05b" testName="WeatherDataAndCurrentConditionalDisplayTest" computerName="HOME" duration="00:00:00.2295689" startTime="2013-09-16T21:33:59.4188080+03:00" endTime="2013-09-16T21:33:59.6498212+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23722ac8-10a6-4ebb-bcb1-4f60aaadd2a6">
+      <Output>
+        <ErrorInfo>
+          <Message>Метод проверки UnitTests.PatternLibraryTests.ObserverTests.WeatherDataAndCurrentConditionalDisplayTest выдал исключение: Moq.MockException: 
+Expected invocation on the mock once, but was 0 times: x =&gt; x.WriteLine(It.IsAny&lt;String&gt;(), It.IsAny&lt;Object[]&gt;())
+
+Configured setups:
+x =&gt; x.WriteLine(It.IsAny&lt;String&gt;(), It.IsAny&lt;Object[]&gt;()), Times.Never
+No invocations performed..</Message>
+          <StackTrace>    в Moq.Mock.ThrowVerifyException(MethodCall expected, IEnumerable`1 setups, IEnumerable`1 actualCalls, Expression expression, Times times, Int32 callCount)
+   в Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   в Moq.Mock.Verify[T](Mock mock, Expression`1 expression, Times times, String failMessage)
+   в Moq.Mock`1.Verify(Expression`1 expression, Times times)
+   в UnitTests.PatternLibraryTests.ObserverTests.WeatherDataAndCurrentConditionalDisplayTest() в E:\git\PatternSample\UnitTests\PatternLibraryTests\ObserverTests.cs:строка 55
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff010886-cc21-4c8b-9869-21a8b063e4e3" testId="eeca522d-5fca-1ca9-ce65-b62b0af46fb9" testName="SupportInitializeTest" computerName="HOME" duration="00:00:00.0064994" startTime="2013-09-16T21:33:59.6528214+03:00" endTime="2013-09-16T21:33:59.6608219+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff010886-cc21-4c8b-9869-21a8b063e4e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Метод проверки UnitTests.CommonTests.SupportTests.SupportInitializeTest выдал исключение: Moq.MockException: 
+Expected invocation on the mock once, but was 0 times: x =&gt; x.WriteLine(It.IsAny&lt;String&gt;(), It.IsAny&lt;Object[]&gt;())
+
+Configured setups:
+x =&gt; x.WriteLine(It.IsAny&lt;String&gt;(), It.IsAny&lt;Object[]&gt;()), Times.Never
+No invocations performed..</Message>
+          <StackTrace>    в Moq.Mock.ThrowVerifyException(MethodCall expected, IEnumerable`1 setups, IEnumerable`1 actualCalls, Expression expression, Times times, Int32 callCount)
+   в Moq.Mock.VerifyCalls(Interceptor targetInterceptor, MethodCall expected, Expression expression, Times times)
+   в Moq.Mock.Verify[T](Mock mock, Expression`1 expression, Times times, String failMessage)
+   в Moq.Mock`1.Verify(Expression`1 expression, Times times)
+   в UnitTests.CommonTests.SupportTests.SupportInitializeTest() в E:\git\PatternSample\UnitTests\CommonTests\SupportTests.cs:строка 49
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9f8d7ce-83c8-49e7-bc0e-7a57a9100780" testId="22125279-2c30-28bd-ae18-4bc4a4c1472e" testName="FromXmlTest" computerName="HOME" duration="00:00:00.0016762" startTime="2013-09-16T21:33:59.6628220+03:00" endTime="2013-09-16T21:33:59.6668222+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9f8d7ce-83c8-49e7-bc0e-7a57a9100780">
+    </UnitTestResult>
+  </Results>
+</TestRun>

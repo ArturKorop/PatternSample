@@ -1,4 +1,5 @@
 ﻿using System;
+using Common.Code;
 using Common.Code.Configuration;
 using Common.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -16,8 +17,10 @@ namespace UnitTests.PatternLibraryTests
         [TestInitialize]
         public void Init()
         {
+            DIServiceLocator.SetLocator(new UnityContainer());
+
             var mockITextProvider = new Mock<ITextProvider>();
-             mockITextProvider.Setup(x => x.WriteLine(It.IsAny<string>(), It.IsAny<object[]>())).Callback
+            mockITextProvider.Setup(x => x.WriteLine(It.IsAny<string>(), It.IsAny<object[]>())).Callback
                 <string, object[]>((format, args) =>
                     {
                         _verifyResult = String.Format(format, args);
@@ -25,9 +28,8 @@ namespace UnitTests.PatternLibraryTests
 
             mockITextProvider.Setup(x => x.Wait());
 
-            var container = new UnityContainer();
-            container.RegisterInstance(typeof (ITextProvider), mockITextProvider.Object);
-            DIServiceLocator.SetLocator(container);
+            DIServiceLocator.Current.RegisterInstance(typeof (ITextProvider), mockITextProvider.Object);
+            Support.Configure();
         }
 
         [TestMethod]
@@ -43,6 +45,7 @@ namespace UnitTests.PatternLibraryTests
             Assert.AreEqual(_verifyResult, String.Format("Current conditions: {0}F degrees and {1}% humidity", 10,
                                                          10));
         }
+
         [TestMethod]
         public void WeatherDataAndStatisticDisplayTest()
         {
