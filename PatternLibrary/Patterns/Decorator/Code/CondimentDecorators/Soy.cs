@@ -1,4 +1,7 @@
-﻿using PatternLibrary.Patterns.Decorator.Abstract;
+﻿using Common.Code.Configuration;
+using Microsoft.Practices.Unity;
+using PatternLibrary.Patterns.Decorator.Abstract;
+using PatternLibrary.Patterns.Decorator.Interface;
 
 namespace PatternLibrary.Patterns.Decorator.Code.CondimentDecorators
 {
@@ -16,7 +19,7 @@ namespace PatternLibrary.Patterns.Decorator.Code.CondimentDecorators
 
         public override double Cost()
         {
-            return Beverage.Cost() + .15;
+            return Beverage.Cost() + DIServiceLocator.Current.Resolve<IPriceProvider>().GetPrice<Soy>();
         }
     }
 }

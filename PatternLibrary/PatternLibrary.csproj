@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,11 +46,13 @@
     <Compile Include="Patterns\Decorator\Code\Beverages\DarkRoast.cs" />
     <Compile Include="Patterns\Decorator\Code\Beverages\Espresso.cs" />
     <Compile Include="Patterns\Decorator\Code\Beverages\HouseBlend.cs" />
+    <Compile Include="Patterns\Decorator\Code\Common\ComponentCosts.cs" />
     <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Mocha.cs" />
     <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Soy.cs" />
     <Compile Include="Patterns\Decorator\Code\CondimentDecorators\Whip.cs" />
     <Compile Include="Patterns\Decorator\Code\Support\SupportExtensions.cs" />
     <Compile Include="Patterns\Decorator\DecoratorStarter.cs" />
+    <Compile Include="Patterns\Decorator\Interface\IPriceProvider.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\StatisticDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\WeatherData.cs" />

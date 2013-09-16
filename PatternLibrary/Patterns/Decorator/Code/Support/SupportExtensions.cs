@@ -9,5 +9,10 @@ namespace PatternLibrary.Patterns.Decorator.Code.Support
         {
             return (T) Activator.CreateInstance(typeof (T), beverage);
         }
+
+        public static void AddComponent<T>(ref Beverage beverage) where T : CondimentDecorator
+        {
+            beverage = (T)Activator.CreateInstance(typeof (T), beverage);
+        }
     }
 }

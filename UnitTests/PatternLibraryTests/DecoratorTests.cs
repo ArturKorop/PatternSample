@@ -1,6 +1,6 @@
-﻿using Common.Code;
-using Common.Code.Configuration;
+﻿using Common.Code.Configuration;
 using Microsoft.Practices.Unity;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PatternLibrary.Patterns.Decorator.Abstract;
 using PatternLibrary.Patterns.Decorator.Code.Beverages;
 using PatternLibrary.Patterns.Decorator.Code.Common;
@@ -8,30 +8,34 @@ using PatternLibrary.Patterns.Decorator.Code.CondimentDecorators;
 using PatternLibrary.Patterns.Decorator.Code.Support;
 using PatternLibrary.Patterns.Decorator.Interface;
 
-namespace PatternLibrary.Patterns.Decorator
+namespace UnitTests.PatternLibraryTests
 {
-    [Runnable(true)]
-    public class DecoratorStarter
+    [TestClass]
+    public class DecoratorTests
     {
-        public static void Start()
+        [TestMethod]
+        public void DecoratorTest()
         {
             DIServiceLocator.Current.RegisterInstance<IPriceProvider>(new ComponentCosts());
 
             Beverage beverage = new Espresso();
             beverage = new Mocha(beverage);
-            "{0} ${1}".P(beverage.Description, beverage.Cost());
+            Assert.AreEqual(beverage.Description, "Espresso, Mocha");
+            Assert.AreEqual(beverage.Cost(), 2.19);
 
             Beverage beverage2 = new DarkRoast();
             beverage2 = beverage2.AddComponent<Mocha>();
             beverage2 = beverage2.AddComponent<Mocha>();
             beverage2 = beverage2.AddComponent<Whip>();
-            "{0} ${1}".P(beverage2.Description, beverage2.Cost());
+            Assert.AreEqual(beverage2.Description, "Dark Roast, Mocha, Mocha, Whip");
+            Assert.AreEqual(beverage2.Cost(), 1.49);
 
             Beverage beverage3 = new HouseBlend();
             SupportExtensions.AddComponent<Soy>(ref beverage3);
             SupportExtensions.AddComponent<Mocha>(ref beverage3);
             SupportExtensions.AddComponent<Whip>(ref beverage3);
-            "{0} ${1}".P(beverage3.Description, beverage3.Cost());
+            Assert.AreEqual(beverage3.Description, "House Blend Coffee, Soy, Mocha, Whip");
+            Assert.AreEqual(beverage3.Cost(), 1.34);
         }
     }
 }

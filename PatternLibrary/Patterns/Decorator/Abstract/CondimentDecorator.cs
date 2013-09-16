@@ -5,5 +5,7 @@
         protected Beverage Beverage;
 
         public override abstract string Description { get; }
+
+        protected double Price = 0;
     }
 }
