@@ -22,7 +22,7 @@ namespace Common.Code
 
         private static ITextProvider Provider
         {
-            get { return _provider ?? (_provider = DIServiceLocator.Current.Resolve<ITextProvider>()); }
+            get { return _provider; }
         }
 
         /// <summary>

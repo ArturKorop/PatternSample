@@ -28,6 +28,7 @@ namespace UnitTests.CommonTests
         public void SupportInitializeTest()
         {
             DIServiceLocator.Current.RegisterInstance(typeof(ITextProvider), _textProviderMockFirst.Object);
+            Support.Configure();
             "Test".Print();
             _textProviderMockFirst.Verify(x=>x.WriteLine(It.IsAny<string>(), It.IsAny<object[]>()), Times.Once());
             "Test2".Print();
@@ -69,7 +70,17 @@ namespace UnitTests.CommonTests
         [TestMethod]
         public void FromXmlTest()
         {
-            
+            XNamespace ns1 = "http://www.w3.org/2001/XMLSchema-instance";
+            XNamespace ns2 = "http://www.w3.org/2001/XMLSchema";
+            var example = new XElement("TestClass", new XAttribute(XNamespace.Xmlns + "xsi", ns1),
+                                       new XAttribute(XNamespace.Xmlns + "xsd", ns2), new XElement("I", 5),
+                                       new XElement("S", "Test"));
+
+            var target = example.FromXml<TestClass>();
+            Assert.IsNotNull(target);
+            Assert.AreEqual(target.I, 5);
+            Assert.AreEqual(target.S, "Test");
+
         }
 
         public class TestClass

@@ -53,6 +53,14 @@
     <Compile Include="Patterns\Decorator\Code\Support\SupportExtensions.cs" />
     <Compile Include="Patterns\Decorator\DecoratorStarter.cs" />
     <Compile Include="Patterns\Decorator\Interface\IPriceProvider.cs" />
+    <Compile Include="Patterns\Factory\Abstract\Pizza.cs" />
+    <Compile Include="Patterns\Factory\Abstract\PizzaStore.cs" />
+    <Compile Include="Patterns\Factory\Code\PizzaStores\ChicagoPizzaStore.cs" />
+    <Compile Include="Patterns\Factory\Code\PizzaStores\NYPizzaStyleStore.cs" />
+    <Compile Include="Patterns\Factory\Code\Pizzas\ChicagoStyleCheesePizza.cs" />
+    <Compile Include="Patterns\Factory\Code\Pizzas\NYStyleCheesePizza.cs" />
+    <Compile Include="Patterns\Factory\Enum\PizzaType.cs" />
+    <Compile Include="Patterns\Factory\FactoryStarter.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\StatisticDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\WeatherData.cs" />

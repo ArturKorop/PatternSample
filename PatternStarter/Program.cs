@@ -35,6 +35,7 @@ namespace PatternStarter
         private static void Configure()
         {
             DIServiceLocator.Current.RegisterInstance(typeof(ITextProvider), new ConsoleTextProvider());
+            Support.Configure();
         }
     }
 }
