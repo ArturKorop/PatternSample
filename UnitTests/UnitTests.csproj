@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CommonTests\SupportTests.cs" />
     <Compile Include="PatternLibraryTests\DecoratorTests.cs" />
+    <Compile Include="PatternLibraryTests\FactoryTests.cs" />
     <Compile Include="PatternLibraryTests\ObserverTests.cs" />
     <Compile Include="PatternLibraryTests\StartegyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

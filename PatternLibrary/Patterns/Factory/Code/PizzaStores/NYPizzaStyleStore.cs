@@ -13,8 +13,9 @@ namespace PatternLibrary.Patterns.Factory.Code.PizzaStores
             {
                 case PizzaType.Cheese:
                     return new NYStyleCheesePizza();
-                case PizzaType.Clam:
                 case PizzaType.Veggie:
+                    return new NYStyleVeggiePizza();
+                case PizzaType.Clam:
                 case PizzaType.Pepperoni:
                 default:
                     throw new ArgumentException("Wrong type of pizza");

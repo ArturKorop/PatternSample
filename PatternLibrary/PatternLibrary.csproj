@@ -58,7 +58,9 @@
     <Compile Include="Patterns\Factory\Code\PizzaStores\ChicagoPizzaStore.cs" />
     <Compile Include="Patterns\Factory\Code\PizzaStores\NYPizzaStyleStore.cs" />
     <Compile Include="Patterns\Factory\Code\Pizzas\ChicagoStyleCheesePizza.cs" />
+    <Compile Include="Patterns\Factory\Code\Pizzas\ChicagoStyleVeggiePizza.cs" />
     <Compile Include="Patterns\Factory\Code\Pizzas\NYStyleCheesePizza.cs" />
+    <Compile Include="Patterns\Factory\Code\Pizzas\NYStyleVeggiePizza.cs" />
     <Compile Include="Patterns\Factory\Enum\PizzaType.cs" />
     <Compile Include="Patterns\Factory\FactoryStarter.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
