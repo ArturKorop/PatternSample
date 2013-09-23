@@ -1,26 +1,20 @@
 ﻿using System.Collections.Generic;
 using Common.Code;
+using PatternLibrary.Patterns.Factory.Interface.Ingredients;
 
 namespace PatternLibrary.Patterns.Factory.Abstract
 {
     public abstract class Pizza
     {
-        public string Name { get; protected set; }
-        protected string Dough;
-        protected string Sauce;
-        protected List<string> Toppings = new List<string>();
+        public string Name { get; set; }
+        protected IDough Dough;
+        protected ISauce Sauce;
+        protected ICheese Cheese;
+        protected IClam Clam;
+        protected IPepperoni Pepperoni;
+        protected List<IVeggie> Veggies = new List<IVeggie>();
 
-        public virtual void Prepare()
-        {
-            "Preparing {0}".P(Name);
-            "Tossing dough...".P();
-            "Adding souce...".P();
-            "Adding toppings: ".P();
-            foreach (var topping in Toppings)
-            {
-                "   {0}".P(topping);
-            }
-        }
+        public abstract void Prepare();
 
         public virtual void Bake()
         {
