@@ -7,7 +7,7 @@ using PatternLibrary.Patterns.Factory.Interface.Ingredients;
 
 namespace PatternLibrary.Patterns.Factory.Code.IngredientFactories
 {
-    public class ChicagoIngredientFactory : IPizzaIngredientFactory
+    public class ChicagoPizzaIngredientFactory : IPizzaIngredientFactory
     {
         public IDough CreateDough()
         {

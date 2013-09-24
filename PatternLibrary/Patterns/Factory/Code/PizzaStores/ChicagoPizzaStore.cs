@@ -12,7 +12,7 @@ namespace PatternLibrary.Patterns.Factory.Code.PizzaStores
         public override Pizza CreatePizza(PizzaType type)
         {
             Pizza pizza;
-            IPizzaIngredientFactory ingredientFactory = new ChicagoIngredientFactory();
+            IPizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
 
             switch (type)
             {

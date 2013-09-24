@@ -53,7 +53,7 @@
     <Compile Include="Patterns\Decorator\Code\Support\SupportExtensions.cs" />
     <Compile Include="Patterns\Decorator\DecoratorStarter.cs" />
     <Compile Include="Patterns\Decorator\Interface\IPriceProvider.cs" />
-    <Compile Include="Patterns\Factory\Code\IngredientFactories\ChicagoIngredientFactory.cs" />
+    <Compile Include="Patterns\Factory\Code\IngredientFactories\ChicagoPizzaIngredientFactory.cs" />
     <Compile Include="Patterns\Factory\Code\IngredientFactories\NYPizzaIngredientFactory.cs" />
     <Compile Include="Patterns\Factory\Code\Ingredients\ICheeses\MozzarellaCheese.cs" />
     <Compile Include="Patterns\Factory\Code\Ingredients\ICheeses\ReggianoCheese.cs" />
