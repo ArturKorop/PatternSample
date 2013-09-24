@@ -5,7 +5,7 @@ using PatternLibrary.Patterns.Factory.Enum;
 
 namespace PatternLibrary.Patterns.Factory
 {
-    [Runnable(true)]
+    [Runnable]
     public class FactoryStarter
     {
          public static void Start()

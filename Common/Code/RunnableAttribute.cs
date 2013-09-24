@@ -2,6 +2,7 @@
 
 namespace Common.Code
 {
+    [AttributeUsage(AttributeTargets.Class)]
     public class RunnableAttribute : Attribute
     {
         public bool IsRunnable { get; set; }

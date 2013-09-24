@@ -85,6 +85,8 @@
     <Compile Include="Patterns\Observer\Interface\IObserver.cs" />
     <Compile Include="Patterns\Observer\Interface\ISubject.cs" />
     <Compile Include="Patterns\Observer\ObserverStarter.cs" />
+    <Compile Include="Patterns\Singleton\Code\ChocolateBoiler.cs" />
+    <Compile Include="Patterns\Singleton\SingletonStarter.cs" />
     <Compile Include="Patterns\Strategy\Abstract\Duck.cs" />
     <Compile Include="Patterns\Strategy\Code\DuckImpl\ModelDuck.cs" />
     <Compile Include="Patterns\Strategy\Code\IFlyBehaviorImpl\FlyNoWay.cs" />

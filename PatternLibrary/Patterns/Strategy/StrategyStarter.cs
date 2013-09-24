@@ -4,7 +4,7 @@ using PatternLibrary.Patterns.Strategy.Code.IFlyBehaviorImpl;
 
 namespace PatternLibrary.Patterns.Strategy
 {
-    [Runnable()]
+    [Runnable]
     public class StrategyStarter
     {
         public static void Start()
