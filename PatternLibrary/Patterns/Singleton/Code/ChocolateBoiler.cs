@@ -39,7 +39,7 @@ namespace PatternLibrary.Patterns.Singleton.Code
             {
                 if (!_empty) return;
 
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 _empty = false;
                 _boiled = true;
                 "Fill successful {0}".P(owner);
@@ -52,7 +52,7 @@ namespace PatternLibrary.Patterns.Singleton.Code
             {
                 if (_empty || !_boiled) return;
 
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 _empty = true;
                 "Drain successful {0}".P(owner);
             }
