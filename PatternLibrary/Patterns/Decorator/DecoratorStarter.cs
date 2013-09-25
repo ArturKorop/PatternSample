@@ -10,7 +10,7 @@ using PatternLibrary.Patterns.Decorator.Interface;
 
 namespace PatternLibrary.Patterns.Decorator
 {
-    [Runnable(true)]
+    [Runnable]
     public class DecoratorStarter
     {
         public static void Start()

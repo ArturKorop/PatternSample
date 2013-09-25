@@ -32,7 +32,6 @@ namespace Common.Code
         /// <param name="obj">Object to print</param>
         public static void Print<T>(this T obj)
         {
-
             obj.ToString().Print();
         }
 

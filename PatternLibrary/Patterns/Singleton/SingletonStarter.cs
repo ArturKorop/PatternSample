@@ -7,7 +7,7 @@ using PatternLibrary.Patterns.Singleton.Code;
 
 namespace PatternLibrary.Patterns.Singleton
 {
-    [Runnable(true)]
+    [Runnable()]
     public class SingletonStarter
     {
         public static void Start()
