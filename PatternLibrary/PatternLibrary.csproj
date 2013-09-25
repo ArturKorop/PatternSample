@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\Command\Code\Commands\LightOnCommand.cs" />
+    <Compile Include="Patterns\Command\Code\RemotingObjcets\Light.cs" />
+    <Compile Include="Patterns\Command\Code\SimpleRemoteControl.cs" />
+    <Compile Include="Patterns\Command\Interface\ICommand.cs" />
     <Compile Include="Patterns\Decorator\Abstract\Beverage.cs" />
     <Compile Include="Patterns\Decorator\Abstract\CondimentDecorator.cs" />
     <Compile Include="Patterns\Decorator\Code\Beverages\DarkRoast.cs" />
