@@ -10,5 +10,10 @@ namespace PatternLibrary.Patterns.Command.Code.Commands
         {
             "No command".P();
         }
+
+        public void Undo()
+        {
+            "No command for Undo".P();
+        }
     }
 }

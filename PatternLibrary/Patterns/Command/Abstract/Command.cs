@@ -12,5 +12,6 @@ namespace PatternLibrary.Patterns.Command.Abstract
         }
 
         public abstract void Exequte();
+        public abstract void Undo();
     }
 }

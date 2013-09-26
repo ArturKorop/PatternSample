@@ -14,5 +14,10 @@ namespace PatternLibrary.Patterns.Command.Code.Commands
         {
             Target.On();
         }
+
+        public override void Undo()
+        {
+            Target.Off();
+        }
     }
 }

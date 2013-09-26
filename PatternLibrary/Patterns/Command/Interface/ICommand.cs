@@ -3,5 +3,6 @@
     public interface ICommand
     {
         void Exequte();
+        void Undo();
     }
 }

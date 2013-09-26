@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using PatternLibrary.Patterns.Command.Code.Commands;
 using PatternLibrary.Patterns.Command.Interface;
@@ -8,9 +9,10 @@ namespace PatternLibrary.Patterns.Command.Code
     public class RemoteControl
     {
         private const int ButtonCount = 7;
-        private ICommand[] _onCommands = new ICommand[ButtonCount];
-        private ICommand[] _offCommands = new ICommand[ButtonCount];
-
+        private readonly ICommand[] _onCommands = new ICommand[ButtonCount];
+        private readonly ICommand[] _offCommands = new ICommand[ButtonCount];
+        private readonly Stack<ICommand> _lastCommands = new Stack<ICommand>(); 
+        
         public RemoteControl()
         {
             for (int i = 0; i < ButtonCount; i++)
@@ -35,6 +37,7 @@ namespace PatternLibrary.Patterns.Command.Code
                 throw new ArgumentOutOfRangeException(String.Format("OnButtonPushed: Incoming count {0} > Max count {1}", slot, ButtonCount));
         
             _onCommands[slot].Exequte();
+            _lastCommands.Push(_onCommands[slot]);
         }
 
         public void OffButtonPushed(int slot)
@@ -43,6 +46,13 @@ namespace PatternLibrary.Patterns.Command.Code
                 throw new ArgumentOutOfRangeException(String.Format("OffButtonPushed: Incoming count {0} > Max count {1}", slot, ButtonCount));
 
             _offCommands[slot].Exequte();
+            _lastCommands.Push(_offCommands[slot]);
+        }
+
+        public void UndoButtonPushed()
+        {
+            if(_lastCommands.Count > 0)
+                _lastCommands.Pop().Undo();
         }
 
         public override string ToString()
