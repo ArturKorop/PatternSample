@@ -2,6 +2,7 @@
 using PatternLibrary.Patterns.Command.Code;
 using PatternLibrary.Patterns.Command.Code.Commands;
 using PatternLibrary.Patterns.Command.Code.RemotingObjcets;
+using PatternLibrary.Patterns.Command.Interface;
 
 namespace PatternLibrary.Patterns.Command
 {
@@ -23,12 +24,15 @@ namespace PatternLibrary.Patterns.Command
             var ceililngFanMediumOn = new CeilingFanOnCommand(ceililngFan, CeilingFanSpeed.Medium);
             var ceililngFanHighOn = new CeilingFanOnCommand(ceililngFan, CeilingFanSpeed.High);
             var ceililngFanOff = new CeilingFanOffCommand(ceililngFan);
+            var partyOn = new MacroCommand(new ICommand[] {lightOn, stereoOn});
+            var partyOff = new MacroCommand(new ICommand[] { lightOff, stereoOff });
 
             remoteControl.SetCommand(2, lightOn, lightOff);
             remoteControl.SetCommand(3, stereoOn, stereoOff);
             remoteControl.SetCommand(4, ceililngFanLowOn, ceililngFanOff);
             remoteControl.SetCommand(5, ceililngFanMediumOn, ceililngFanOff);
             remoteControl.SetCommand(6, ceililngFanHighOn, ceililngFanOff);
+            remoteControl.SetCommand(1, partyOn, partyOff);
             remoteControl.P();
             RemoteControlPressButtons(remoteControl);
         }
@@ -53,6 +57,9 @@ namespace PatternLibrary.Patterns.Command
             remoteControl.UndoButtonPushed();
             remoteControl.UndoButtonPushed();
             remoteControl.UndoButtonPushed();
+            "-----------------------------".P();
+            remoteControl.OnButtonPushed(1);
+            remoteControl.OffButtonPushed(1);
         }
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="Patterns\Command\Code\Commands\CeilingFanOnCommand.cs" />
     <Compile Include="Patterns\Command\Code\Commands\LightOffCommand.cs" />
     <Compile Include="Patterns\Command\Code\Commands\LightOnCommand.cs" />
+    <Compile Include="Patterns\Command\Code\Commands\MacroCommand.cs" />
     <Compile Include="Patterns\Command\Code\Commands\NoCommand.cs" />
     <Compile Include="Patterns\Command\Code\Commands\StereoOffCommand.cs" />
     <Compile Include="Patterns\Command\Code\Commands\StereoOnCommand.cs" />

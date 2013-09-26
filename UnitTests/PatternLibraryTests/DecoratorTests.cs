@@ -1,4 +1,6 @@
-﻿using Common.Code.Configuration;
+﻿using Common.Code;
+using Common.Code.Configuration;
+using Common.Interfaces;
 using Microsoft.Practices.Unity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PatternLibrary.Patterns.Decorator.Abstract;
@@ -16,7 +18,8 @@ namespace UnitTests.PatternLibraryTests
         [TestMethod]
         public void DecoratorTest()
         {
-            DIServiceLocator.Current.RegisterInstance<IPriceProvider>(new ComponentCosts());
+            DIServiceLocator.Current.RegisterInstance(typeof(ITextProvider));
+            Support.Configure();
 
             Beverage beverage = new Espresso();
             beverage = new Mocha(beverage);

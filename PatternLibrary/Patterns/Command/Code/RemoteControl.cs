@@ -33,16 +33,17 @@ namespace PatternLibrary.Patterns.Command.Code
 
         public void OnButtonPushed(int slot)
         {
-            if (slot >= ButtonCount)
-                throw new ArgumentOutOfRangeException(String.Format("OnButtonPushed: Incoming count {0} > Max count {1}", slot, ButtonCount));
-        
+            if (slot < 1 || slot >= ButtonCount)
+                throw new ArgumentOutOfRangeException(String.Format(
+                    "OnButtonPushed: Incoming count {0} > Max count {1}", slot, ButtonCount));
+
             _onCommands[slot].Exequte();
             _lastCommands.Push(_onCommands[slot]);
         }
 
         public void OffButtonPushed(int slot)
         {
-            if (slot >= ButtonCount)
+            if (slot < 1 || slot >= ButtonCount)
                 throw new ArgumentOutOfRangeException(String.Format("OffButtonPushed: Incoming count {0} > Max count {1}", slot, ButtonCount));
 
             _offCommands[slot].Exequte();

@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonTests\SupportTests.cs" />
+    <Compile Include="Helper\HelperInstance.cs" />
+    <Compile Include="PatternLibraryTests\CommandTests.cs" />
     <Compile Include="PatternLibraryTests\DecoratorTests.cs" />
     <Compile Include="PatternLibraryTests\FactoryTests.cs" />
     <Compile Include="PatternLibraryTests\ObserverTests.cs" />
