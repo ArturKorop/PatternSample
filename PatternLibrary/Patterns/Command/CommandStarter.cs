@@ -6,7 +6,7 @@ using PatternLibrary.Patterns.Command.Interface;
 
 namespace PatternLibrary.Patterns.Command
 {
-    [Runnable(true)]
+    [Runnable(false)]
     public class CommandStarter
     {
         public static void Start()
