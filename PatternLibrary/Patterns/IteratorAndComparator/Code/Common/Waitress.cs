@@ -9,11 +9,13 @@ namespace PatternLibrary.Patterns.IteratorAndComparator.Code.Common
     {
         private readonly PancakeHouseMenu _pancakeHouseMenu;
         private readonly DinerMenu _dinerMenu;
+        private readonly CafeMenu _cafeMenu;
 
         public Waitress()
         {
             _pancakeHouseMenu = new PancakeHouseMenu();
             _dinerMenu = new DinerMenu();
+            _cafeMenu = new CafeMenu();
         }
 
         public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu)
@@ -26,7 +28,8 @@ namespace PatternLibrary.Patterns.IteratorAndComparator.Code.Common
         {
             var pancakeIterator = new PancakeHouseIterator(_pancakeHouseMenu.MenuItems);
             var dinerIterator = new DinerMenuIterator(_dinerMenu.MenuItems);
-            var commonIterator = new CommonIterator {pancakeIterator, dinerIterator};
+            var cafeIterator = new CafeMenuIterator(_cafeMenu.MenuItems);
+            var commonIterator = new CommonIterator { pancakeIterator, dinerIterator, cafeIterator };
             foreach (var item in commonIterator)
             {
                 if (item != null)

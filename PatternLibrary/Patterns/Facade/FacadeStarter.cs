@@ -4,7 +4,7 @@ using PatternLibrary.Patterns.Facade.Code.Objects;
 
 namespace PatternLibrary.Patterns.Facade
 {
-    [Runnable(true)]
+    [Runnable]
     public class FacadeStarter
     {
          public static void Start()

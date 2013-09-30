@@ -1,9 +1,9 @@
 ﻿using Common.Code;
 using PatternLibrary.Patterns.TemplateMethod.Code.Caffeines;
 
-namespace PatternLibrary.Patterns.TemplateMethod.Code
+namespace PatternLibrary.Patterns.TemplateMethod
 {
-    [Runnable(true)]
+    [Runnable]
     public class TemplateMethodStarter
     {
         public static void Start()

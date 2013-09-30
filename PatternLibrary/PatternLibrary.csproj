@@ -74,7 +74,7 @@
     <Compile Include="Patterns\Decorator\Code\Support\SupportExtensions.cs" />
     <Compile Include="Patterns\Decorator\DecoratorStarter.cs" />
     <Compile Include="Patterns\Decorator\Interface\IPriceProvider.cs" />
-    <Compile Include="Patterns\Facade\Code\FacadeStarter.cs" />
+    <Compile Include="Patterns\Facade\FacadeStarter.cs" />
     <Compile Include="Patterns\Facade\Code\Facade\HomeTheaterFacade.cs" />
     <Compile Include="Patterns\Facade\Code\Objects\Amp.cs" />
     <Compile Include="Patterns\Facade\Code\Objects\Popper.cs" />
@@ -106,9 +106,11 @@
     <Compile Include="Patterns\Factory\Interface\IPizzaIngredientFactory.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Common\MenuItem.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Common\Waitress.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\CafeMenuIterator.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\CommonIterator.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\DinerMenuIterator.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\PancakeHouseIterator.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Menus\CafeMenu.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Menus\DinerMenu.cs" />
     <Compile Include="Patterns\IteratorAndComparator\Code\Menus\PancakeHouseMenu.cs" />
     <Compile Include="Patterns\IteratorAndComparator\IteratorAndComparatorStarter.cs" />
@@ -136,7 +138,7 @@
     <Compile Include="Patterns\TemplateMethod\Abstract\CaffeineBeverage.cs" />
     <Compile Include="Patterns\TemplateMethod\Code\Caffeines\Coffee.cs" />
     <Compile Include="Patterns\TemplateMethod\Code\Caffeines\Tea.cs" />
-    <Compile Include="Patterns\TemplateMethod\Code\TemplateMethodStarter.cs" />
+    <Compile Include="Patterns\TemplateMethod\TemplateMethodStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
