@@ -120,6 +120,10 @@
     <Compile Include="Patterns\Strategy\Interaface\IQuackBehavior.cs" />
     <Compile Include="Patterns\Strategy\Code\DuckImpl\MallardDuck.cs" />
     <Compile Include="Patterns\Strategy\StrategyStarter.cs" />
+    <Compile Include="Patterns\TemplateMethod\Abstract\CaffeineBeverage.cs" />
+    <Compile Include="Patterns\TemplateMethod\Code\Caffeines\Coffee.cs" />
+    <Compile Include="Patterns\TemplateMethod\Code\Caffeines\Tea.cs" />
+    <Compile Include="Patterns\TemplateMethod\Code\TemplateMethodStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
