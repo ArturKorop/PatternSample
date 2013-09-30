@@ -2,7 +2,7 @@
 using PatternLibrary.Patterns.Facade.Code.Facade;
 using PatternLibrary.Patterns.Facade.Code.Objects;
 
-namespace PatternLibrary.Patterns.Facade.Code
+namespace PatternLibrary.Patterns.Facade
 {
     [Runnable(true)]
     public class FacadeStarter
