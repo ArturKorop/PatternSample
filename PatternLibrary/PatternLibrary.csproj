@@ -99,6 +99,14 @@
     <Compile Include="Patterns\Factory\Enum\PizzaType.cs" />
     <Compile Include="Patterns\Factory\FactoryStarter.cs" />
     <Compile Include="Patterns\Factory\Interface\IPizzaIngredientFactory.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Common\MenuItem.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Common\Waitress.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\CommonIterator.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\DinerMenuIterator.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Iterators\PancakeHouseIterator.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Menus\DinerMenu.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\Code\Menus\PancakeHouseMenu.cs" />
+    <Compile Include="Patterns\IteratorAndComparator\IteratorAndComparatorStarter.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\StatisticDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\WeatherData.cs" />
