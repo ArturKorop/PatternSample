@@ -1,8 +1,8 @@
 ﻿using Common.Code;
-using PatternLibrary.Patterns.IteratorAndComparator.Code.Common;
-using PatternLibrary.Patterns.IteratorAndComparator.Code.Menus;
+using PatternLibrary.Patterns.IteratorAndComposite.Code.Common;
+using PatternLibrary.Patterns.IteratorAndComposite.Code.Menus;
 
-namespace PatternLibrary.Patterns.IteratorAndComparator
+namespace PatternLibrary.Patterns.IteratorAndComposite
 {
     [Runnable(true)]
     public class IteratorAndComparatorStarter

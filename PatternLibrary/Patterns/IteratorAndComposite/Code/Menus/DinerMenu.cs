@@ -1,6 +1,6 @@
-﻿using PatternLibrary.Patterns.IteratorAndComparator.Code.Common;
+﻿using PatternLibrary.Patterns.IteratorAndComposite.Code.Common;
 
-namespace PatternLibrary.Patterns.IteratorAndComparator.Code.Menus
+namespace PatternLibrary.Patterns.IteratorAndComposite.Code.Menus
 {
     public class DinerMenu : Menu
     {

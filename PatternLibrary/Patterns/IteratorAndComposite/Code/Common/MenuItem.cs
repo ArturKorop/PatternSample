@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Common.Code;
-using PatternLibrary.Patterns.IteratorAndComparator.Abstract;
+using PatternLibrary.Patterns.IteratorAndComposite.Abstract;
 
-namespace PatternLibrary.Patterns.IteratorAndComparator.Code.Common
+namespace PatternLibrary.Patterns.IteratorAndComposite.Code.Common
 {
     public class MenuItem : MenuComponent
     {

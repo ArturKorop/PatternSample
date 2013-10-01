@@ -5,7 +5,7 @@ using PatternLibrary.Patterns.Adapter.Code.Turkeys;
 
 namespace PatternLibrary.Patterns.Adapter
 {
-    [Runnable(true)]
+    [Runnable]
     public class AdapterStarter
     {
         public static void Start()
