@@ -122,6 +122,15 @@
     <Compile Include="Patterns\Observer\ObserverStarter.cs" />
     <Compile Include="Patterns\Singleton\Code\ChocolateBoiler.cs" />
     <Compile Include="Patterns\Singleton\SingletonStarter.cs" />
+    <Compile Include="Patterns\State\Abstract\BaseState.cs" />
+    <Compile Include="Patterns\State\Code\Common\GumballMachine.cs" />
+    <Compile Include="Patterns\State\Code\States\HasQuarterState.cs" />
+    <Compile Include="Patterns\State\Code\States\NoQuarterState.cs" />
+    <Compile Include="Patterns\State\Code\States\SoldOutState.cs" />
+    <Compile Include="Patterns\State\Code\States\SoldState.cs" />
+    <Compile Include="Patterns\State\Interface\IGumballMachine.cs" />
+    <Compile Include="Patterns\State\Interface\IState.cs" />
+    <Compile Include="Patterns\State\StateStarter.cs" />
     <Compile Include="Patterns\Strategy\Abstract\Duck.cs" />
     <Compile Include="Patterns\Strategy\Code\DuckImpl\ModelDuck.cs" />
     <Compile Include="Patterns\Strategy\Code\IFlyBehaviorImpl\FlyNoWay.cs" />
