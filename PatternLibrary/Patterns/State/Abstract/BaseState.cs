@@ -1,4 +1,5 @@
-﻿using PatternLibrary.Patterns.State.Code.Common;
+﻿using Common.Code;
+using PatternLibrary.Patterns.State.Code.Common;
 using PatternLibrary.Patterns.State.Interface;
 
 namespace PatternLibrary.Patterns.State.Abstract
@@ -19,5 +20,11 @@ namespace PatternLibrary.Patterns.State.Abstract
         public abstract void TurnCrank();
 
         public abstract void Dispense();
+
+        public virtual void AddGumballs(int count)
+        {
+            "Added {0} gumballs".P(count);
+            GumballMachine.AddGumballsConcrete(count);
+        }
     }
 }

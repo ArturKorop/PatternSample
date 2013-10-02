@@ -29,5 +29,11 @@ namespace PatternLibrary.Patterns.State.Code.States
         {
             "Sorry, gumballs ended".P();
         }
+
+        public override void AddGumballs(int count)
+        {
+            base.AddGumballs(count);
+            GumballMachine.SetState(GumballMachine.NoQuarterState);
+        }
     }
 }

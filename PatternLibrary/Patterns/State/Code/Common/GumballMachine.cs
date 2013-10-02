@@ -6,12 +6,19 @@ namespace PatternLibrary.Patterns.State.Code.Common
 {
     public class GumballMachine : IGumballMachine
     {
+        #region Private property
+
         private readonly IState _noQuarterState;
         private readonly IState _soldOutState;
         private readonly IState _hasQuarterState;
         private readonly IState _soldState;
+        private readonly IState _winnerState;
         private IState _currentState;
-        private int _count;
+        private int _count; 
+
+        #endregion
+
+        #region Public property
 
         public int Count
         {
@@ -38,12 +45,20 @@ namespace PatternLibrary.Patterns.State.Code.Common
             get { return _soldState; }
         }
 
+        public IState WinnerState
+        {
+            get { return _winnerState; }
+        } 
+
+        #endregion
+
         public GumballMachine(int count)
         {
             _noQuarterState = new NoQuarterState(this);
             _soldOutState = new SoldOutState(this);
             _hasQuarterState = new HasQuarterState(this);
             _soldState = new SoldState(this);
+            _winnerState = new WinnerState(this);
             _count = count;
 
             if (_count > 0)
@@ -66,6 +81,11 @@ namespace PatternLibrary.Patterns.State.Code.Common
             _currentState.Dispense();
         }
 
+        public void AddGumballs(int count)
+        {
+            _currentState.AddGumballs(count);
+        }
+
         public void SetState(IState state)
         {
             _currentState = state;
@@ -77,6 +97,11 @@ namespace PatternLibrary.Patterns.State.Code.Common
 
             if (_count != 0)
                 _count--;
+        }
+
+        public void AddGumballsConcrete(int count)
+        {
+            _count += count;
         }
 
     }

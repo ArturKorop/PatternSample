@@ -6,5 +6,6 @@
         void EjectQuarter();
         void TurnCrank();
         void Dispense();
+        void AddGumballs(int count);
     }
 }

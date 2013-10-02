@@ -1,4 +1,5 @@
-﻿using Common.Code;
+﻿using System;
+using Common.Code;
 using PatternLibrary.Patterns.State.Abstract;
 using PatternLibrary.Patterns.State.Code.Common;
 
@@ -6,6 +7,8 @@ namespace PatternLibrary.Patterns.State.Code.States
 {
     public class HasQuarterState : BaseState
     {
+        readonly Random _rand = new Random();
+
         public HasQuarterState(GumballMachine gumballMachine) : base(gumballMachine)
         {
         }
@@ -24,7 +27,15 @@ namespace PatternLibrary.Patterns.State.Code.States
         public override void TurnCrank()
         {
             "You turned...".P();
-            GumballMachine.SetState(GumballMachine.SoldState);
+            int winner = _rand.Next(10);
+            if (winner == 0 && GumballMachine.Count > 1)
+            {
+                GumballMachine.SetState(GumballMachine.WinnerState);
+            }
+            else
+            {
+                GumballMachine.SetState(GumballMachine.SoldState);
+            }
         }
 
         public override void Dispense()

@@ -5,5 +5,6 @@
         void InsertQuarter();
         void EjectQarter();
         void TurnCrank();
+        void AddGumballs(int count);
     }
 }

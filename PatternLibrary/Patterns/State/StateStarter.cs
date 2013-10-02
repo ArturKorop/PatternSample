@@ -9,7 +9,7 @@ namespace PatternLibrary.Patterns.State
     {
         public static void Start()
         {
-            IGumballMachine gumballMachine = new GumballMachine(3);
+            IGumballMachine gumballMachine = new GumballMachine(20);
 
             gumballMachine.InsertQuarter();
             gumballMachine.TurnCrank();
@@ -21,11 +21,13 @@ namespace PatternLibrary.Patterns.State
             gumballMachine.EjectQarter();
             gumballMachine.TurnCrank();
 
-            gumballMachine.InsertQuarter();
-            gumballMachine.TurnCrank();
-
-            gumballMachine.InsertQuarter();
-            gumballMachine.TurnCrank();
+            for (int i = 0; i < 30; i++)
+            {
+                gumballMachine.InsertQuarter();
+                gumballMachine.TurnCrank();
+                if (i == 25)
+                    gumballMachine.AddGumballs(10);
+            }
         } 
     }
 }
