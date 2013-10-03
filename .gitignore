@@ -5,3 +5,5 @@ bin
 /Out
 Bin
 _ReSharper.PatternSample
+.sonar
+MetricResults
