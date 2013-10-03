@@ -4,7 +4,7 @@ using PatternLibrary.Patterns.IteratorAndComposite.Code.Menus;
 
 namespace PatternLibrary.Patterns.IteratorAndComposite
 {
-    [Runnable(true)]
+    [Runnable]
     public class IteratorAndComparatorStarter
     {
         public static void Start()

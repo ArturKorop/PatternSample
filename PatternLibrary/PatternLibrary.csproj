@@ -34,6 +34,8 @@
     <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -120,6 +122,8 @@
     <Compile Include="Patterns\Observer\Interface\IObserver.cs" />
     <Compile Include="Patterns\Observer\Interface\ISubject.cs" />
     <Compile Include="Patterns\Observer\ObserverStarter.cs" />
+    <Compile Include="Patterns\Proxy\Code\GumballMonitor.cs" />
+    <Compile Include="Patterns\Proxy\ProxyStarter.cs" />
     <Compile Include="Patterns\Singleton\Code\ChocolateBoiler.cs" />
     <Compile Include="Patterns\Singleton\SingletonStarter.cs" />
     <Compile Include="Patterns\State\Abstract\BaseState.cs" />
@@ -149,6 +153,11 @@
     <Compile Include="Patterns\TemplateMethod\Code\Caffeines\Tea.cs" />
     <Compile Include="Patterns\TemplateMethod\TemplateMethodStarter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GumballMachineService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -156,7 +165,37 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\GumballMachineService\GumballMachineService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GumballMachineService\GumballMachineService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GumballMachineService\MainService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GumballMachineService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GumballMachineService\GumballMachineService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GumballMachineService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GumballMachineService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GumballMachineService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
