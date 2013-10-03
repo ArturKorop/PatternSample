@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="54274fc8-33bd-49a4-b518-693141f09861" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/GumballMachineService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GumballMachineService.xsd" MetadataType="Schema" ID="830889b2-2602-4dd9-94fa-90b49ef395ee" SourceId="1" SourceUrl="http://localhost:8080/GumballMachineService?xsd=xsd1" />
+    <MetadataFile FileName="GumballMachineService1.xsd" MetadataType="Schema" ID="f39ce672-f905-4c48-ba82-ca4dc90b7edb" SourceId="1" SourceUrl="http://localhost:8080/GumballMachineService?xsd=xsd0" />
+    <MetadataFile FileName="MainService.wsdl" MetadataType="Wsdl" ID="3ea33099-7be4-4fcc-9ca1-ac719161fae3" SourceId="1" SourceUrl="http://localhost:8080/GumballMachineService?wsdl" />
+    <MetadataFile FileName="GumballMachineService.disco" MetadataType="Disco" ID="5ebba7ed-f34d-40c2-848c-f7ee399e23f9" SourceId="1" SourceUrl="http://localhost:8080/GumballMachineService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
