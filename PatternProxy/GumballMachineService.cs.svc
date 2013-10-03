@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PatternProxy.MainService" CodeBehind="GumballMachineService.cs.svc.cs" %>
