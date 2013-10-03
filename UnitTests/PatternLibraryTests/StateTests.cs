@@ -18,7 +18,7 @@ namespace UnitTests.PatternLibraryTests
         [TestMethod]
         public void StateWorkingTest()
         {
-            IGumballMachine gumballMachine = new GumballMachine(20);
+            IGumballMachine gumballMachine = new GumballMachine(20, "TestGumballMachine");
 
             for (int i = 0; i < 20; i++)
             {
@@ -32,7 +32,7 @@ namespace UnitTests.PatternLibraryTests
         [TestMethod]
         public void StateEjectTest()
         {
-            IGumballMachine gumballMachine = new GumballMachine(10);
+            IGumballMachine gumballMachine = new GumballMachine(10, "TestGumballMachine");
 
             gumballMachine.InsertQuarter();
             gumballMachine.EjectQarter();
@@ -44,7 +44,7 @@ namespace UnitTests.PatternLibraryTests
         [TestMethod]
         public void StateAddGumballsTest()
         {
-            IGumballMachine gumballMachine = new GumballMachine(10);
+            IGumballMachine gumballMachine = new GumballMachine(10, "TestGumballMachine");
 
             for (int i = 0; i < 10; i++)
             {
