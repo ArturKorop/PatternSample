@@ -1,4 +1,5 @@
-﻿using Common.Code;
+﻿using System;
+using Common.Code;
 using PatternLibrary.Patterns.State.Code.States;
 using PatternLibrary.Patterns.State.Interface;
 
@@ -14,7 +15,8 @@ namespace PatternLibrary.Patterns.State.Code.Common
         private readonly IState _soldState;
         private readonly IState _winnerState;
         private IState _currentState;
-        private int _count; 
+        private int _count;
+        private string _location;
 
         #endregion
 
@@ -52,7 +54,7 @@ namespace PatternLibrary.Patterns.State.Code.Common
 
         #endregion
 
-        public GumballMachine(int count)
+        public GumballMachine(int count, string location)
         {
             _noQuarterState = new NoQuarterState(this);
             _soldOutState = new SoldOutState(this);
@@ -60,6 +62,7 @@ namespace PatternLibrary.Patterns.State.Code.Common
             _soldState = new SoldState(this);
             _winnerState = new WinnerState(this);
             _count = count;
+            _location = location;
 
             if (_count > 0)
                 _currentState = _noQuarterState;
@@ -104,5 +107,9 @@ namespace PatternLibrary.Patterns.State.Code.Common
             _count += count;
         }
 
+        public string GetStatus()
+        {
+            return String.Format("Gumball Machine from {0}, have {1} gumballs", _location, _count);
+        }
     }
 }

@@ -4,12 +4,12 @@ using PatternLibrary.Patterns.State.Interface;
 
 namespace PatternLibrary.Patterns.State
 {
-    [Runnable(true)]
+    [Runnable]
     public class StateStarter
     {
         public static void Start()
         {
-            IGumballMachine gumballMachine = new GumballMachine(20);
+            IGumballMachine gumballMachine = new GumballMachine(20, "TestGumballMachine");
 
             gumballMachine.InsertQuarter();
             gumballMachine.TurnCrank();
