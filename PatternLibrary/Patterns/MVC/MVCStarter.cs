@@ -10,7 +10,7 @@ using PatternLibrary.Patterns.MVC.Interface;
 
 namespace PatternLibrary.Patterns.MVC
 {
-    [Runnable(true)]
+    [Runnable]
     public class MVCStarter
     {
         public static void Start()
