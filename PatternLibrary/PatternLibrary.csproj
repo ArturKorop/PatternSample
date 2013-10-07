@@ -34,8 +34,10 @@
     <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -134,6 +136,28 @@
     <Compile Include="Patterns\IteratorAndComposite\Code\Menus\DinerMenu.cs" />
     <Compile Include="Patterns\IteratorAndComposite\Code\Menus\PancakeHouseMenu.cs" />
     <Compile Include="Patterns\IteratorAndComposite\IteratorAndComparatorStarter.cs" />
+    <Compile Include="Patterns\MVC\Code\BPMObservers\ConsoleBPMObserver.cs" />
+    <Compile Include="Patterns\MVC\Code\Common\BeatController.cs" />
+    <Compile Include="Patterns\MVC\Code\Common\BeatModel.cs" />
+    <Compile Include="Patterns\MVC\Code\Common\FakeSequencer.cs" />
+    <Compile Include="Patterns\MVC\CustomForm\DJController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patterns\MVC\CustomForm\DJController.Designer.cs">
+      <DependentUpon>DJController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\MVC\CustomForm\DJView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patterns\MVC\CustomForm\DJView.Designer.cs">
+      <DependentUpon>DJView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\MVC\Interface\IBeatModel.cs" />
+    <Compile Include="Patterns\MVC\Interface\IBeatObserver.cs" />
+    <Compile Include="Patterns\MVC\Interface\IBPMObserver.cs" />
+    <Compile Include="Patterns\MVC\Interface\IController.cs" />
+    <Compile Include="Patterns\MVC\Interface\ISequencer.cs" />
+    <Compile Include="Patterns\MVC\MVCStarter.cs" />
     <Compile Include="Patterns\Observer\Code\CurrentConditionalDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\StatisticDisplay.cs" />
     <Compile Include="Patterns\Observer\Code\WeatherData.cs" />
@@ -214,6 +238,15 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Patterns\MVC\CustomForm\DJController.resx">
+      <DependentUpon>DJController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patterns\MVC\CustomForm\DJView.resx">
+      <DependentUpon>DJView.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
